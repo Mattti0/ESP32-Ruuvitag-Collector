@@ -87,11 +87,12 @@ namespace network {
         }
     }
     namespace mqtt {
-        WiFiClient espClient;
+        WiFiClientSecure espClient;
         PubSubClient client(espClient);
 
         void begin(){
             if(WiFi.isConnected() && config::mqttServerIP!=std::string()){
+                espClient.setInsecure();
                 std::string macAddress=WiFi.macAddress().c_str();
                 std::string id;
                 std::stringstream stream;

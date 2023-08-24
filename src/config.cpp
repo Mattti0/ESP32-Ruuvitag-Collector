@@ -27,19 +27,19 @@ namespace config{
     // Each server adds up time for Influx operations, therefore
     // limit the number of servers to one or two.
     void setValues(){
-        InfluxConfiguration iC;
-        // Influx server IP
-        iC.host="192.168.1.100";
-        // Influx server port
-        iC.port=8086;
-        // Influx database name
-        iC.database="test0";
-        // Influx database username for writing
-        iC.username="thewriter";
-        // The username's password
-        iC.password="iamwriter";
-        // Add Influx server to configuration        
-        influxConfiguration.push_back(iC);
+        //InfluxConfiguration iC;
+        //// Influx server IP
+        //iC.host="";
+        //// Influx server port
+        //iC.port=8086;
+        //// Influx database name
+        //iC.database="test0";
+        //// Influx database username for writing
+        //iC.username="thewriter";
+        //// The username's password
+        //iC.password="iamwriter";
+        //// Add Influx server to configuration        
+        //influxConfiguration.push_back(iC);
 
         //iC.host="1.2.3.4";
         //iC.database="test0";
